@@ -1,5 +1,5 @@
-import bg from '../assets/hero-bg.png';
-import tiger from '../assets/tiger.png';
+const bg = '/assets/hero-bg.png';
+const tiger = '/assets/tiger.png';
 import './Hero.css';
 
 export default function Hero() {

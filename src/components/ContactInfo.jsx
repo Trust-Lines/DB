@@ -1,4 +1,4 @@
-import arrow from '../assets/arrow-link.svg';
+const arrow = '/assets/arrow-link.svg';
 import './ContactInfo.css';
 
 export default function ContactInfo() {

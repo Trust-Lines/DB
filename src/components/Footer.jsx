@@ -1,4 +1,4 @@
-import logo from '../assets/logo-footer.png';
+const logo = '/assets/logo-footer.png';
 import BrandCards from './BrandCards.jsx';
 import NewsletterForm from './NewsletterForm.jsx';
 import SocialLinks from './SocialLinks.jsx';

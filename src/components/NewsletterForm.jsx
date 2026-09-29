@@ -1,4 +1,4 @@
-import arrow from '../assets/arrow-submit.svg';
+const arrow = '/assets/arrow-submit.svg';
 import './NewsletterForm.css';
 
 export default function NewsletterForm() {

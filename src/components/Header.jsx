@@ -1,6 +1,8 @@
+'use client';
+
 import { useLayoutEffect, useRef, useState } from 'react';
-import logo from '../assets/header-logo.svg';
-import tshop from '../assets/tshop.svg';
+const logo = '/assets/header-logo.svg';
+const tshop = '/assets/tshop.svg';
 import './Header.css';
 
 // Builds the header outline at the real pixel size so the rounded corners

@@ -1,8 +1,8 @@
-import a from '../assets/brand1-a.svg';
-import b from '../assets/brand1-b.svg';
-import c from '../assets/brand1-c.svg';
-import brand2 from '../assets/brand2.svg';
-import brand3 from '../assets/brand3.svg';
+const a = '/assets/brand1-a.svg';
+const b = '/assets/brand1-b.svg';
+const c = '/assets/brand1-c.svg';
+const brand2 = '/assets/brand2.svg';
+const brand3 = '/assets/brand3.svg';
 import './BrandCards.css';
 
 export default function BrandCards() {

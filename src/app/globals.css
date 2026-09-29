@@ -1,7 +1,7 @@
 :root {
   --page-width: 1592px;
   --navy: #334a64;
-  --font: 'Montserrat', sans-serif;
+  --font: var(--font-montserrat), 'Montserrat', sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }

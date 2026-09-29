@@ -1,6 +1,6 @@
-import instagram from '../assets/social-instagram.svg';
-import youtube from '../assets/social-youtube.svg';
-import linkedin from '../assets/social-linkedin.svg';
+const instagram = '/assets/social-instagram.svg';
+const youtube = '/assets/social-youtube.svg';
+const linkedin = '/assets/social-linkedin.svg';
 import './SocialLinks.css';
 
 const items = [
