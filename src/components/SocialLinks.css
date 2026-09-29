@@ -1,0 +1,3 @@
+.social { display: flex; flex-direction: column; gap: 24px; }
+.social__list { display: flex; gap: 10px; align-items: center; }
+.social__list img { width: 49px; height: 49px; }

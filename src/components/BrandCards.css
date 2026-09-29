@@ -1,0 +1,21 @@
+.brands { display: flex; gap: 20px; align-items: center; }
+.brands__card { flex: 0 1 323px; width: 323px; min-width: 0; aspect-ratio: 323 / 81; height: auto; }
+.brands__card--img { max-width: none; }
+.brands__card--green {
+  position: relative;
+  background: #2e4539;
+  border: 1px solid #556d61;
+  border-radius: 8px;
+}
+.brands__card--green img { position: absolute; max-width: none; }
+.brands__icon { left: 25.23%; top: 25.3%; width: 13.58%; height: 51.6%; }
+.brands__sub  { left: 40.62%; top: 61.95%; width: 33.52%; height: 10.5%; }
+.brands__word { left: 40.58%; top: 29.8%; width: 33.57%; height: 24.66%; }
+
+@media (max-width: 1100px) {
+  .brands { flex-wrap: wrap; justify-content: flex-start; }
+}
+@media (max-width: 700px) {
+  .brands { flex-direction: column; align-items: flex-start; width: 100%; }
+  .brands__card { width: 100%; max-width: 323px; flex-basis: auto; }
+}

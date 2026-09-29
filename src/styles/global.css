@@ -1,0 +1,38 @@
+:root {
+  --page-width: 1592px;
+  --navy: #334a64;
+  --font: 'Montserrat', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body { margin: 0; padding: 0; }
+
+body {
+  background: #fff;
+  color: #fff;
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+p, h1, h2, ul { margin: 0; padding: 0; }
+ul { list-style: none; }
+
+/* Fixed design width, centred on the screen */
+.page {
+  width: 100%;
+  max-width: var(--page-width);
+  margin: 0 auto;
+  background: #fff;
+  overflow: clip; /* clip (not hidden) so the sticky topbar keeps working */
+}
+
+/* Zero-height sticky wrapper: the header stays pinned while scrolling */
+.page__topbar {
+  position: sticky;
+  top: 0;
+  height: 0;
+  z-index: 10;
+}

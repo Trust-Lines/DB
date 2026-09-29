@@ -1,0 +1,9 @@
+.fmenu { display: flex; justify-content: space-between; gap: 40px; }
+.fmenu__col { display: flex; flex-direction: column; gap: 16px; }
+.fmenu ul { display: flex; flex-direction: column; gap: 13px; }
+.fmenu li a { font-weight: 600; font-size: 22px; line-height: 24px; white-space: nowrap; }
+
+@media (max-width: 700px) {
+  .fmenu { flex-wrap: wrap; justify-content: flex-start; gap: 32px 48px; }
+  .fmenu li a { font-size: 18px; }
+}
