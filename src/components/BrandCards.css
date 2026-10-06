@@ -1,6 +1,8 @@
 .brands { display: flex; gap: 20px; align-items: center; }
 .brands__card { flex: 0 1 323px; width: 323px; min-width: 0; aspect-ratio: 323 / 81; height: auto; }
+a.brands__card { display: block; }
 .brands__card--img { max-width: none; }
+.brands__card--img img { width: 100%; height: 100%; max-width: none; }
 .brands__card--green {
   position: relative;
   background: #2e4539;

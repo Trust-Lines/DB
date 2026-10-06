@@ -8,12 +8,14 @@ import './BrandCards.css';
 export default function BrandCards() {
   return (
     <div className="brands">
-      <div className="brands__card brands__card--green">
+      <a className="brands__card brands__card--green" href="https://sm.tlines.us" target="_blank" rel="noopener noreferrer">
         <img className="brands__icon" src={a} alt="" />
         <img className="brands__word" src={c} alt="TLines" />
         <img className="brands__sub" src={b} alt="Store Maker" />
-      </div>
-      <img className="brands__card brands__card--img" src={brand2} alt="TLines Premium Store Fitouts" />
+      </a>
+      <a className="brands__card brands__card--img" href="https://psf.tlines.us" target="_blank" rel="noopener noreferrer">
+        <img src={brand2} alt="TLines Premium Store Fitouts" />
+      </a>
       <img className="brands__card brands__card--img" src={brand3} alt="TLines Design & Build" />
     </div>
   );
