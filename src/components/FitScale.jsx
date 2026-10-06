@@ -2,16 +2,19 @@
 
 import { useLayoutEffect } from 'react';
 
-// The hero is designed at 1592x1190. On screens smaller than that the whole
-// page is zoomed out (never in) so the full hero is always visible.
+// Zoom the whole page out (never in) when the screen is narrower than the
+// 1592px design. The hero fills the screen height, and its tiger shrinks to fit.
 const DESIGN_W = 1592;
-const DESIGN_H = 1190;
+const HERO_MAX = 1100;
+const HERO_MIN = 560;
 
 export default function FitScale() {
   useLayoutEffect(() => {
     const update = () => {
-      const s = Math.min(1, window.innerWidth / DESIGN_W, window.innerHeight / DESIGN_H);
+      const s = Math.min(1, window.innerWidth / DESIGN_W);
+      const h = Math.min(HERO_MAX, Math.max(HERO_MIN, window.innerHeight / s));
       document.documentElement.style.setProperty('--fit', s.toFixed(4));
+      document.documentElement.style.setProperty('--hero-h', Math.round(h) + 'px');
     };
     update();
     window.addEventListener('resize', update);
