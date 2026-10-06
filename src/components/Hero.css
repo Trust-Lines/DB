@@ -1,8 +1,6 @@
 .hero {
   position: relative;
-  /* the 1592x1190 design is scaled down as a whole to fit the screen (never up) */
-  --s: min(1, tan(atan2(100vw, 1592px)), tan(atan2(100svh, 1190px)));
-  height: calc(1190px * var(--s));
+  height: 1190px;
   overflow: hidden;
   background: #1e1e1e;
 }
@@ -29,7 +27,7 @@
   top: 0;
   width: 1592px;
   height: 1190px;
-  transform: translateX(-50%) scale(var(--s));
+  transform: translateX(-50%);
   transform-origin: top center;
 }
 

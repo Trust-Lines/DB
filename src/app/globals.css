@@ -7,6 +7,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 html, body { margin: 0; padding: 0; }
+html { background: #1e1e1e; }
 
 body {
   background: #fff;
@@ -26,6 +27,7 @@ ul { list-style: none; }
   max-width: var(--page-width);
   margin: 0 auto;
   background: #fff;
+  zoom: var(--fit, 1); /* set by FitScale */
   overflow: clip; /* clip (not hidden) so the sticky topbar keeps working */
 }
 
