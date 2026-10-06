@@ -50,7 +50,7 @@ export default function Header() {
       <a className="header__logo" href="/">
         <img src={logo} alt="TLines Design & Build" />
       </a>
-      <a className="header__shop" href="#">
+      <a className="header__shop" href="https://tshop-theta.vercel.app/" target="_blank" rel="noopener noreferrer">
         <img src={tshop} alt="" className="header__shop-bg" />
         <span className="header__shop-text">
           <b>T Shop</b>
