@@ -1,6 +1,8 @@
 .hero {
   position: relative;
-  height: 1015px;
+  /* the 1592x1190 design is scaled down as a whole to fit the screen (never up) */
+  --s: min(1, tan(atan2(100vw, 1592px)), tan(atan2(100svh, 1190px)));
+  height: calc(1190px * var(--s));
   overflow: hidden;
   background: #1e1e1e;
 }
@@ -19,6 +21,16 @@
   position: absolute;
   inset: 0;
   background: rgba(30, 30, 30, 0.9);
+}
+
+.hero__stage {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1592px;
+  height: 1190px;
+  transform: translateX(-50%) scale(var(--s));
+  transform-origin: top center;
 }
 
 .hero__text {
@@ -64,16 +76,4 @@
   width: 167.66%;
   height: 114.7%;
   max-width: none;
-}
-
-@media (max-width: 1000px) {
-  .hero__text, .hero__tiger { left: 50%; }
-}
-
-@media (max-width: 700px) {
-  .hero { height: 760px; }
-  .hero__text { top: 230px; }
-  .hero__text h1 { font-size: 40px; line-height: 50px; letter-spacing: -1.2px; }
-  .hero__text p { font-size: 20px; letter-spacing: -0.6px; }
-  .hero__tiger { top: 390px; width: 300px; height: 438px; }
 }
